@@ -1,4 +1,4 @@
-FROM dockdev/base
+FROM skegio/base
 
 RUN apt-get install gcc -y
 RUN curl https://storage.googleapis.com/golang/go1.6.linux-amd64.tar.gz | tar -C /usr/local -xzf -
