@@ -1,6 +1,6 @@
 FROM skegio/base
 
-RUN apt-get install gcc -y
+RUN apt-get update && apt-get install gcc -y
 RUN curl https://storage.googleapis.com/golang/go1.8rc3.linux-amd64.tar.gz | tar -C /usr/local -xzf -
 ENV PATH $PATH:/usr/local/go/bin
 
