@@ -1,7 +1,7 @@
 FROM skegio/base
 
 RUN apt-get update && apt-get install gcc -y
-RUN curl https://dl.google.com/go/go1.10rc1.linux-amd64.tar.gz | tar -C /usr/local -xzf -
+RUN curl https://dl.google.com/go/go1.10.1.linux-amd64.tar.gz | tar -C /usr/local -xzf -
 ENV PATH $PATH:/usr/local/go/bin
 
 # set up environment
